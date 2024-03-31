@@ -29,7 +29,7 @@ class Board extends JPanel implements ActionListener {
 
         setBackground(Color.BLACK);
         setPreferredSize(new Dimension(500, 500));
-        setFocusable(true); //
+        setFocusable(true);
         initGame();
         LoadImage();
     }
@@ -53,7 +53,7 @@ class Board extends JPanel implements ActionListener {
             x[i] = 50 - i * dot_size;
         }
         LocateApple();
-        timer = new Timer(140, this); 
+        timer = new Timer(140, this);
         timer.start();
     }
 
@@ -197,8 +197,7 @@ public class SnakeGame extends JFrame {
     }
 
     public static void main(String args[]) {
-        SwingUtilities.invokeLater(() -> {
-            new SnakeGame().setVisible(true);
-        });
+        new SnakeGame().setVisible(true);
+
     }
 }
